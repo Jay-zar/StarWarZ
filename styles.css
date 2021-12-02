@@ -5,10 +5,11 @@ body {
   background-position: center;
   background-size: cover;
   font-family: monospace;
+  margin: 0;
 }
 
 .exposition {
-  width: 40%;
+  width: 60%;
   padding: 1em;
   text-align: center;
   color: rgb(238, 228, 228);
