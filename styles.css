@@ -6,9 +6,11 @@ body {
   background-size: cover;
   font-family: monospace;
 }
+
 .exposition {
-  width: auto;
+  width: 40%;
   padding: 1em;
   text-align: center;
   color: rgb(238, 228, 228);
+  background-color: #45394b, transparent;
 }
