@@ -36,3 +36,8 @@ body {
   color: rgb(238, 228, 228);
   background-color: #45394b, transparent;
 }
+
+h1 {
+  text-align: center;
+  color: white;
+}
