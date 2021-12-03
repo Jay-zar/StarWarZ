@@ -11,8 +11,10 @@ body {
 #planet-type {
   float: left;
   width: 40%;
+  background-color: black;
 }
 #info-sidebar {
+  background-color: rgb(77, 56, 74);
   float: right;
   width: 30%;
   border:silver, 5px;
