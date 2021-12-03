@@ -3,10 +3,9 @@ body {
   background-color: #696767;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
   font-family: monospace;
   margin: 0;
-  
+
 }
 
 #planet-type {
@@ -21,10 +20,13 @@ body {
   float: right;
   width: 30%;
   border:silver, 5px;
+  margin: 0.5em;
+  padding: 0.5em;
 }
 
 .planet-img:hover {
   opacity: 0.5;
+  margin: 0.5em;
 }
 
 .exposition {
