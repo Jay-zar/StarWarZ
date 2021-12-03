@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://d2pn8kiwq2w21t.cloudfront.net/images/jpegPIA18168.width-1280.jpg");
+  background-image: url("https://apod.nasa.gov/apod/image/1211/TadpoleGalaxyPS1V9snyder900.jpg");
   background-color: #696767;
   background-repeat: no-repeat;
   background-position: center;
@@ -14,16 +14,17 @@ body {
   width: 40%;
   background-color: black;
   fill: black
-  display: flex;
+  display: center;
   align-items: center;
 }
+
 #info-sidebar {
   background-color: rgb(77, 56, 74);
   fill-opacity:rgb(77, 56, 74), 40%;
   float: right;
   width: 30%;
   border:silver, 5px;
-  margin: 0.5em;
+  margin-right: 0.5em;
   padding: 0.5em;
 }
 
