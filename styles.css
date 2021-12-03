@@ -3,21 +3,28 @@ body {
   background-color: #696767;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: auto;
   font-family: monospace;
   margin: 0;
+  
 }
 
 #planet-type {
   float: left;
   width: 40%;
   background-color: black;
+  fill: black
 }
 #info-sidebar {
   background-color: rgb(77, 56, 74);
+  fill-opacity:rgb(77, 56, 74), 40%;
   float: right;
   width: 30%;
   border:silver, 5px;
+}
+
+.planet-img:hover {
+  opacity: 0.5;
 }
 
 .exposition {
