@@ -8,6 +8,16 @@ body {
   margin: 0;
 }
 
+#planet-type {
+  float: left;
+  width: 40%;
+}
+#info-sidebar {
+  float: right;
+  width: 30%;
+  border:silver, 5px;
+}
+
 .exposition {
   width: 60%;
   padding: 1em;
