@@ -28,6 +28,10 @@ body {
   padding: 0.5em;
 }
 
+.planet-img {
+  height: 3em;
+}
+
 .planet-img:hover {
   opacity: 0.5;
   margin: 0.5em;
