@@ -43,11 +43,11 @@ body {
 .planet-img:hover {
   opacity: 0.5;
   margin: 0.5em;
-  width: 500px;
+  width: 200px;
 }
 
 .planet-header {
-  width: 700px;
+  width: 300px;
   z-index: 1;
 }
 
