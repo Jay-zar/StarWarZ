@@ -26,6 +26,12 @@ body {
   padding: 0.5em;
 }
 
+#welcome {
+  position: relative;
+  top: 1.5em;
+  justify-content: center;
+}
+
 .planet-img {
   height: 3em;
 }
