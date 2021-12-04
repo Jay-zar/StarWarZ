@@ -1,5 +1,5 @@
 body {
-  background-image: url("tadpole_rec.jpg");
+  background-image: url("images/tadpole_rec.jpg");
   background-color: #696767;
   background-repeat: no-repeat;
   background-position: center;
@@ -22,7 +22,7 @@ body {
   float: right;
   width: 30%;
   position: relative;
-  top:300px;
+  top:200px;
   border:silver, 5px;
   margin-right: 0.5em;
   padding: 0.5em;
@@ -45,7 +45,7 @@ body {
 
 .exposition {
   width: 60%;
-  top: 300px;
+  top: 200px;
   padding: 1em;
   text-align: center;
   color: rgb(238, 228, 228);
