@@ -19,7 +19,7 @@ async function getapi(url) {
 }
 // Calling that async function
 getapi(api_url);
-
+console.log("after api call");
 // Function to hide the loader
 function hideloader() {
 	document.getElementById('loading').style.display = 'none';
