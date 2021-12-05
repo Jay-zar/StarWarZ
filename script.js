@@ -1,8 +1,9 @@
 // api url
-
+console.log("please print"); 
 console.log("print at beginning");
 const api_url =
 	"https://swapi.dev/api/planets/2/";
+
 
 // Defining async function
 async function getapi(url) {
