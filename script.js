@@ -1,4 +1,6 @@
 // api url
+
+console.log("print at beginning");
 const api_url =
 	"https://swapi.dev/api/planets/2/";
 
@@ -9,7 +11,6 @@ async function getapi(url) {
 	const response = await fetch(url);
 	
 	// Storing data in form of JSON
-    console.log("did I print?");
 	var data = await response.json();
 	console.log(data);
 	if (response) {
