@@ -11,18 +11,19 @@ body {
 }
 
 #planet-type {
-  width: 30%;
   justify-content: center;
   clear: both;
 }
 
 #info-sidebar {
-  background-color: rgb(77, 56, 74);
-  fill-opacity:rgb(77, 56, 74), 40%;
+  color:aliceblue;
+  background-color: rgb(48, 49, 139);
   float: right;
   width: 30%;
   position: relative;
-  top:200px;
+  top: 5em;
+  right: 12em;
+  bottom: 8em;
   border:silver, 5px;
   margin-right: 0.5em;
   padding: 0.5em;
@@ -37,22 +38,24 @@ body {
 
 #bb8 {
   justify-self: center;
-  height: 4em;
+  height: 9em;
 }
 
-.ul {
-  display: inline-block;
-  padding: 0.5em;
+.planet-img {
+  width: 150px;
 }
 .planet-img:hover {
   opacity: 0.5;
   margin: 0.5em;
-  width: 200px;
+  width: 175px;
 }
 
 .planet-header {
-  width: 300px;
+  width: 25%;
   z-index: 1;
+  position: absolute;
+  top: 5em;
+  left: 12em;
 }
 
 .exposition {

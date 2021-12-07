@@ -1,50 +1,72 @@
+/*//Get a reference to the form for an event handler
+//for its submit event
+	  console.log('Does the search box load?');
+      var form = document.getElementById("searchform");
+
+	  console.log(form);
+
+      //submit event handler for the form
+      form.addEventListener("submit", function(){
+
+        // when form has been submitted get the textbox value
+        var inputTest = document.getElementById('userInput').value;
+        localStorage.setItem( 'objectToPass', inputTest );
+		console.log(inputTest);
+        window.location.href = "redirect.html";
+
+      }); */
+
 // api url
-console.log("please print"); 
-console.log("print at beginning");
-const api_url =
-	"https://swapi.dev/api/planets/2/";
 
+function fetchData() {
+    fetch("http://swapi.dev/api/planets/2/").then(response => {
+        console.log(response);
+        if(!response.ok) {
+            throw Error("error")
+        }
+        return response.json(); 
 
-// Defining async function
-async function getapi(url) {
-	
-	// Storing response
-	const response = await fetch(url);
-	
-	// Storing data in form of JSON
-	var data = await response.json();
-	console.log(data);
-	if (response) {
-		hideloader();
-	}
-	show(data);
+    }).then(data => {
+        console.log(data);
+        console.log(Object.values(data));
+        // data test
+      /*  console.log(data);
+       const propertyValues = Object.keys(data);
+        //console.log(propertyValues);
+        const html = propertyValues(subject => {
+            return `<div class= "infoSet">
+            <p>Name: ${subject.name}</p>
+            <p>Rotational Period: ${subject.rotational_period}</p>
+            <p>Orbital Period: ${subject.orbital_period}</p>
+            </div>`
+        }).join("") 
+        
+        
+        */
+
+        const html = `<div class= "infoSet">
+        <h2>Planet ${data.name}</h2>
+        <p>Rotational Period: ${data.rotation_period}</p>
+        <p>Orbital Period: ${data.orbital_period}</p>
+        <p>Diameter: ${data.diameter}</p>
+        <p>Climate: ${data.climate}</p>
+        <p>Gravity: ${data.gravity}</p>
+        <p>Terrain: ${data.terrain}</p>
+        <p>Surface Water: ${data.surface_water}</p>
+        <p>Population: ${data.population}</p>
+        <p>Residents: <a href= "${data.residents[0]}">${data.residents[0]}</a>
+        <br><a href= "${data.residents[1]}">${data.residents[1]}</a>
+        <br><a href= "${data.residents[2]}">${data.residents[2]}</a>
+        </p>
+        </div>`
+
+      
+       // console.log(html); //html that should be visible
+        document.querySelector('#info-sidebar').insertAdjacentHTML("afterbegin", html)
+    }).catch(function (error) {
+            console.log(error);
+        });
 }
-// Calling that async function
-getapi(api_url);
-console.log("after api call");
-// Function to hide the loader
-function hideloader() {
-	document.getElementById('loading').style.display = 'none';
-}
-// Function to define innerHTML for HTML table
-function show(data) {
-	let tab =
-		`<tr>
-		<th>Name</th>
-		<th>Office</th>
-		<th>Position</th>
-		<th>Salary</th>
-		</tr>`;
-	
-	// Loop to access all rows
-	for (let r of data.list) {
-		tab += `<tr>
-	<td>${r.name} </td>
-	<td>${r.office}</td>
-	<td>${r.position}</td>
-	<td>${r.salary}</td>		
-</tr>`;
-	}
-	// Setting innerHTML as tab variable
-	document.getElementById("employees").innerHTML = tab;
-}
+  
+  console.log("Test message");
+  fetchData(); 
