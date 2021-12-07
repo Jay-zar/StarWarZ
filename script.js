@@ -30,19 +30,7 @@ function fetchData() {
         console.log(data);
         console.log(Object.values(data));
         // data test
-      /*  console.log(data);
-       const propertyValues = Object.keys(data);
-        //console.log(propertyValues);
-        const html = propertyValues(subject => {
-            return `<div class= "infoSet">
-            <p>Name: ${subject.name}</p>
-            <p>Rotational Period: ${subject.rotational_period}</p>
-            <p>Orbital Period: ${subject.orbital_period}</p>
-            </div>`
-        }).join("") 
-        
-        
-        */
+      //  console.log(data);
 
         const html = `<div class= "infoSet">
         <h2>Planet ${data.name}</h2>
