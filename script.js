@@ -14,9 +14,16 @@
 		console.log(inputTest);
         window.location.href = "redirect.html";
 
-      }); */
+      }); 
 
 // api url
+ async function getName() {
+    fetch(data.residents) {
+        await data;
+} 
+*/
+const apiPlanets = "https://swapi.dev/api/planets/"
+// const planetParams =
 
 function fetchData() {
     fetch("http://swapi.dev/api/planets/2/").then(response => {
@@ -31,7 +38,7 @@ function fetchData() {
         console.log(Object.values(data));
         // data test
       //  console.log(data);
-
+      
         const html = `<div class= "infoSet">
         <h2>Planet ${data.name}</h2>
         <p>Rotational Period: ${data.rotation_period}</p>
@@ -46,6 +53,7 @@ function fetchData() {
         <br><a href= "${data.residents[1]}">${data.residents[1]}</a>
         <br><a href= "${data.residents[2]}">${data.residents[2]}</a>
         </p>
+        <p>${data.residents}}</p>
         </div>`
 
       
@@ -56,5 +64,5 @@ function fetchData() {
         });
 }
   
-  console.log("Test message");
+  console.log("End of functions");
   fetchData(); 
