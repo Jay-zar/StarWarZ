@@ -3,28 +3,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <script src="redirect.js"></script>
   <title>Redirect page</title>
 </head>
 <body>
-  <script>
-  var inputTest = localStorage.getItem('objectToPass');
-  var displayData = inputTest;
-  alert('Inserted Data' + inputTest);
-
-  localStorage.removeItem( 'objectToPass' ); // Clear the localStorage
-
-
-</script>
-  <!-- Here a loader is created which 
-     loads till response comes -->
-     <div class="d-flex justify-content-center">
-        <div class="spinner-border" 
-             role="status" id="loading">
-            <span class="sr-only">Loading...</span>
-  <!-- table for showing data -->
-  <p>Search results</p>
-  <table id="employees"></table>
-
-
+  <div class= "planet-header">
+    <img src="images/tatooine.png">
+  </div>
+  <div id="info-sidebar">
+    <h3>Search results for </h3>
+  </div>
+    <div class= "footer">
+    <p>
+      HELLO THERE KIDS
+    </p>
+  </div>
 </body>
 </html>

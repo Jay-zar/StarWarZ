@@ -5,58 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jay's StarWarZ Page</title>
   <link rel= "stylesheet" href="styles.css">
-  <script scr= "script.js"></script>
 </head>
-<body>
-  <div class= "centralHQ">
-    <h1 id= "welcome">Click a planet to find out more</h1>
-
-    <!--Planet paage links-->
-    <div id= "planet-type">
+  <body>
+    <div class= "centralHQ">
+      <h1 id= "welcome">Click a planet to find out more</h1>
+      <br>
+      <!--Planet page links-->
+      <div id= "planet-type">
         <a href= "tatooine.html"><img src= "images/tatooine.png" class= "planet-img"></a>
 
-        <a href= "alderaan.html"><img class= "planet-img" src= "images/alderaan.png"></a>
+        <a href= "alderaan.html/"><img class= "planet-img" src= "images/alderaan.png"></a>
 
         <a href="yavin4.html"><img src="images/yavin4.png" class= "planet-img"></a>
-      <a href="planets.html?apiNumber=2">PLANETS LINK</a>
       </div>
-  
-    <div class= "exposition">
-      <h2>Find planet by name</h2>
-      <div class="select-box">
-        <div class="options-container active">
-          <div class="options">
-            <input type="radio" class= "radio" id="tatooine" name= "category">
-            <label for= "tatooine">Tatooine</label>
-            </div>
-            <div class="options">
-            <input type="radio" class= "radio" id="alderaan" name= "category">
-            <label for= "alderaan">Alderaan</label>
-            </div>
-            <div class= "options">
-              <input type="radio" class= "radio" id="yavin4" name= "category">
-            <label for= "yavin4">Yavin IV</label>
-            </div>
-          </div>
-        </div>
-        <div class="selected">
-          Select a planet
-        </div>
+    
+      <div class= "exposition" id= "TESTID">
+        <h2>Find planet by name</h2>
+        <a href="planets.html?apiNumber=2">PLANETS LINK</a>
+        <br>
+        <form action= "" method= "GET" id="searchform">
+          <input id= "userInput" placeholder= "Start typing..." type= "textbox" name= "keyword" />
+          <input type="button" value= "submit" id="submit-button">
+        </form>
       </div>
-   
-        
     </div>
-
-    <form id="searchform">
-      <input id = "userInput" type = "textbox" name = "keyword">
-   </form>
-
-
-      <br>
+    <div class= "footer">
       <p>
         <a class="disclaimer" href= "disclaimer.html"><h2>Site Disclaimer and Sources</h2></a>
       </p>
     </div>
-  </div>
-</body>
+    <script src= "script.js"></script>
+  </body>
 </html>

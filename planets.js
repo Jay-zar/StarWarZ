@@ -10,7 +10,6 @@ async function fetchCharacter(residentEndpoints) {
     return data;
 }
 
-
  async function fetchData() {
     fetch("http://swapi.dev/api/planets/"+numberCheck)
     .then(response => {
@@ -33,8 +32,8 @@ async function fetchCharacter(residentEndpoints) {
             let residentsHTML = ``;
             for (let i = 0; i < characters.length; i++) {
                 const character = characters[i]
-                const split_url = character.url.split("/");
-                const id = split_url[split_url.length-2];
+                const splitURL = character.url.split("/");
+                const id = splitURL[splitURL.length-2];
                 residentsHTML+= `<a href="people.html?apiNumber=${id}">${character.name}</a><br>`
             }
             let residentText = ``;
