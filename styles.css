@@ -25,7 +25,6 @@ h2 {
   padding: 10px;
 }
 
-
 #planet-type {
   text-align: center;
   clear: both;
@@ -38,7 +37,8 @@ h2 {
 #info-sidebar {
   color:aliceblue;
   background-color: rgb(55, 56, 110);
-  width: 30%;
+  width: 35%;
+  height: 60%;
   float: right;
   position: static;
   margin-top: 6em;
@@ -47,6 +47,7 @@ h2 {
   border-radius: 8px;
   border-style: groove;
   padding: 2.5em;
+  overflow: auto;
 }
 
 #info-sidebar h2 {
