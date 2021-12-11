@@ -4,6 +4,7 @@
 }
 
 body {
+  width: 100%;
   background-image: url("images/godzilla_galaxy.jpg");
   background-color: #696767;
   background-repeat: no-repeat;
@@ -16,22 +17,19 @@ body {
 h1 {
   text-align: center;
   color: white;
-  margin: 15 px;
+  padding: 15 px;
 }
 
 h2 {
   color: white;
-  margin: 15px;
   padding: 10px;
 }
 
 #planet-type {
   text-align: center;
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
+  margin: 20px;
+  padding: 30px;
+  display: inline-block;
 }
 
 #info-sidebar {
@@ -46,7 +44,7 @@ h2 {
   border: #FAFFCD, 10px;
   border-radius: 8px;
   border-style: groove;
-  padding: 2.5em;
+  padding: 25px;
   overflow: auto;
 }
 
@@ -55,38 +53,60 @@ h2 {
 }
 
 #welcome {
-  position: relative;
-  top: 1.5em;
-  background-color: rgb(31, 29, 65);
+  margin-top: 0px;
+  float: left;
+}
+
+#welcome-image {
+  width: 200px;
+  float: left;
+  margin-top: 0px;
+  margin-right: 70px;
 }
 
 #userInput {
   text-align: center;
   width: 60%;
-  padding: 12px 16 px;
+  padding: 8px 8px;
   margin: 8px 8px;
   font-family: Roboto, sans-serif;
   font-size: 15px;
   border-radius: 8px 8px 8px 8px;
 }
 
+#submit-button {
+  display: none;
+}
+
 #bb8 {
   justify-self: center;
   height: 9em;
-  padding: 15px;
+  padding: 5px;
 }
 
-#down-arrow {
-  width: 10px;
+#bb8-caption {
+  font-size: 12px;
+}
+
+#sources-etc {
+  width: 80%;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;  
+  padding: 20px;
+  text-align: center;
+  color: rgb(238, 228, 228);
+  background-color: black;
+  border-radius: 8px;
 }
 
 .planet-img {
-  width: 150px;
+  width: 200px;
 }
 .planet-img:hover {
   opacity: 0.5;
   margin: 0.5em;
-  width: 175px;
+  width: 250px;
 }
 
 .planet-header {
@@ -99,20 +119,24 @@ h2 {
 
 .people-picture {
   padding: 35px;
-  margin-top: 75px;
+  width: 450px;
+  margin-top: 50px;
   margin-left: 75px;
   float: left;
 }
 
 .footer {
   background-color: rgb(13, 14, 32);
+  opacity: 0.8;
   width: 100%;
-  bottom: 0;
+  margin-bottom: 0;
   text-align: center;
+  clear: right;
 }
 
 a:link {
   text-decoration: none;
+  color: rgb(236, 167, 193)
 }
 a:active {
   color: #7a859b;  
@@ -127,10 +151,10 @@ a:hover {
 }
 
 .exposition {
-  width: 100%;
-  top: 200px;
-  padding: 32px;
-  margin: 15px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;  
+  padding: 20px;
   text-align: center;
   color: rgb(238, 228, 228);
   background-color: black;

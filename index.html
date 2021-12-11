@@ -8,29 +8,29 @@
 </head>
   <body>
     <div class= "centralHQ">
-      <h1 id= "welcome">Click a planet to find out more</h1>
-      <br>
       <!--Planet page links-->
       <div id= "planet-type">
-        <a href= "tatooine.html?apiNumber=1"><img src= "images/tatooine.png" class= "planet-img"></a>
+        <img src="images/starwarzlogo.png" id= "welcome-image" alt="Star Wars logo editted to match galaxy pattern background image">
+          <a href= "tatooine.html?apiNumber=1"><img src= "images/tatooine.png" title= "Tatooine" class= "planet-img"></a>
 
-        <a href= "alderaan.html?apiNumber=2"><img class= "planet-img" src= "images/alderaan.png"></a>
+        <a href= "alderaan.html?apiNumber=2"><img class= "planet-img" title= "Alderaan" src= "images/alderaan.png"></a>
 
-        <a href="yavin4.html?apiNumber=3"><img src="images/yavin4.png" class= "planet-img"></a>
+        <a href="yavin4.html?apiNumber=3"><img title= "Yavin IV" src="images/yavin4.png" class= "planet-img"></a>
       </div>
-    
       <div class= "exposition">
+        <p id= "planet-caption">Click a planet to find out more</p>
         <h2>Search planets and people</h2>
-        <br>
         <form action= "" method= "GET" id="searchform">
           <input id= "userInput" placeholder= "Start typing..." type= "textbox" name= "keyword" />
           <input type= "button" value= "submit" id= "submit-button">
         </form>
+        <br>
       </div>
     </div>
+    <br>
     <div class= "footer">
       <p>
-        <a class="disclaimer" href= "disclaimer.html"><h2>Site Disclaimer and Sources</h2></a>
+        <a class="disclaimer" href= "disclaimer.html"><h3>Site Disclaimer and Sources</h3></a>
       </p>
     </div>
     <script src= "script.js"></script>

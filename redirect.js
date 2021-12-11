@@ -17,15 +17,12 @@ async function fetchData() {
         return Promise.all([jsonPlanetResponse, jsonPeopleResponse]);
     })
     .catch(function (error) {
-        console.log(error);
         const errorHTML = `<p>There was an error processing your request, try refreshing the page</p>`
         document.querySelector('#info-sidebar').insertAdjacentHTML("beforeend", errorHTML)
     })
     .then(jsonResponses => {  
         let resultsHTML = ``;
         if (jsonResponses[0].count + jsonResponses[1].count == 0) {
-            console.log(jsonResponses);
-            console.log("empty array");
             resultsHTML =  `<p>There were no matches for your search please try another one.</p>`
         } else 
         {
@@ -49,7 +46,6 @@ async function fetchData() {
         document.querySelector('#info-sidebar').insertAdjacentHTML("beforeend", html)
         })
         .catch(function (error) {
-            console.log(error);
             const errorHTML = `<p>There was an error processing your request, try refreshing the page</p>`
             document.querySelector('#info-sidebar').insertAdjacentHTML("beforeend", errorHTML)
         })
