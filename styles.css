@@ -35,8 +35,8 @@ h2 {
 #info-sidebar {
   color:aliceblue;
   background-color: rgb(55, 56, 110);
-  width: 35%;
-  height: 60%;
+  width: 500px;
+  height: 375px;
   float: right;
   position: static;
   margin-top: 6em;
@@ -57,6 +57,7 @@ h2 {
   float: left;
   margin-top: 0px;
   margin-right: 70px;
+  opacity: 0.8;
 }
 
 #userInput {
@@ -103,14 +104,14 @@ h2 {
 .planet-img:hover {
   opacity: 0.5;
   margin: 0.5em;
-  width: 250px;
+  width: 225px;
 }
 
 .planet-header {
-  width: 25%;
-  position: absolute;
-  top: 5em;
-  left: 12em;
+  width: 325px;
+  margin-top: 75px;
+  margin-left: 125px;
+  float: left;
 }
 
 .people-picture {
@@ -119,6 +120,7 @@ h2 {
   margin-top: 50px;
   margin-left: 75px;
   float: left;
+  opacity: 0.9;
 }
 
 .footer {
