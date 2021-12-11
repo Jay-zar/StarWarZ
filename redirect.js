@@ -2,8 +2,8 @@ let params = new URLSearchParams(document.location.search);
 const searchTerm = params.get("keyword");
 
 async function fetchData() {
-    let planetsSearchPromise = fetch(`http://swapi.dev/api/planets/?search=${searchTerm}`);
-    let peopleSearchPromise = fetch(`http://swapi.dev/api/people/?search=${searchTerm}`);
+    let planetsSearchPromise = fetch(`https://swapi.dev/api/planets/?search=${searchTerm}`);
+    let peopleSearchPromise = fetch(`https://swapi.dev/api/people/?search=${searchTerm}`);
     
    Promise.all([planetsSearchPromise, peopleSearchPromise])
     .then(responses => {      
