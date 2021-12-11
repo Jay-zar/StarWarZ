@@ -7,7 +7,7 @@ const searchBox = document.querySelector("#searchform input");
 
 document.getElementById("submit-button").addEventListener("click", function(searchRedirect) {
     let searchValue= document.getElementById("userInput").value;
-    const redirectURL = `https://jay-zar.github.io/StarWarZ/`
+    const redirectURL = `https://jay-zar.github.io/StarWarZ/redirect.html?keyword=`
     urlAdd = urlTrimmer(searchValue);
     const searchURL = redirectURL+urlAdd;
     window.location.assign(searchURL);
