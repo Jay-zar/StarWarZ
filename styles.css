@@ -6,10 +6,10 @@
 body {
   width: 100%;
   background-image: url("images/godzilla_galaxy.jpg");
-  background-color: #696767;
+  background-color: #373638;
   background-repeat: no-repeat;
-  background-position:center;
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
   font-family: "Roboto", sans-serif;
   line-height: 1.75;
 }
@@ -52,13 +52,8 @@ h2 {
   text-align: center;
 }
 
-#welcome {
-  margin-top: 0px;
-  float: left;
-}
-
 #welcome-image {
-  width: 200px;
+  width: 210px;
   float: left;
   margin-top: 0px;
   margin-right: 70px;
@@ -84,8 +79,9 @@ h2 {
   padding: 5px;
 }
 
-#bb8-caption {
-  font-size: 12px;
+#disclaimer-logo {
+  width: 175px;
+  opacity: 0.8;
 }
 
 #sources-etc {
@@ -96,12 +92,13 @@ h2 {
   padding: 20px;
   text-align: center;
   color: rgb(238, 228, 228);
-  background-color: black;
+  background-color: rgb(23, 28, 41);
   border-radius: 8px;
 }
 
 .planet-img {
   width: 200px;
+  margin-top: 15px;
 }
 .planet-img:hover {
   opacity: 0.5;
@@ -111,7 +108,6 @@ h2 {
 
 .planet-header {
   width: 25%;
-  z-index: 1;
   position: absolute;
   top: 5em;
   left: 12em;
@@ -132,6 +128,10 @@ h2 {
   margin-bottom: 0;
   text-align: center;
   clear: right;
+}
+
+.logo {
+  text-align: center;
 }
 
 a:link {
@@ -157,6 +157,6 @@ a:hover {
   padding: 20px;
   text-align: center;
   color: rgb(238, 228, 228);
-  background-color: black;
+  background-color: rgb(23, 28, 41);
   border-radius: 8px;
 }
