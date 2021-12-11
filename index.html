@@ -4,14 +4,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jay's StarWarZ Page</title>
-<link rel= "stylesheet" href="styles.css">
+  <link rel= "stylesheet" href="styles.css">
+  <script scr= "script.js"></script>
 </head>
 <body>
-  <h1>Welcome!</h1>
-  <div class = "exposition">
-    <p>Welcome to placeholer text</p>
-    <p>I ka lā 10 o Dēkēmapa, M.H. 1948, ua ho’oholo a kaūkala ka ‘Aha ‘Ōlelo o Nā Aupuni Hui Pū ‘Ia i ka Hō’ike No Nā Pono Kanaka O Ke Ao Nei, ka palapala holo’oko’a ho’i e hō’ike ‘ia ana ma nā ‘ao’ao ma lalo iho nei. 
-      Ma muli o kēia hana kūikawā, ua kuahaua ka ‘Aha ‘Ōlelo i nā Lālā e ho’olaha i ka ‘ōlelo o ka Hō’ike “e ho’olaha, hō’ike’ike, kūkala leo, a e kāko’o ‘ia aku ma nā kula a me nā wahi ho’ona’auao ‘ē a’e, me ka ho’okae ‘ole aku i ke kūlana politika o nā aupuni a me nā panalā’au.</p>
+  <div class= "centralHQ">
+    <h1 id= "welcome">Click a planet to find out more</h1>
+
+    <!--Planet paage links-->
+    <div id= "planet-type">
+        <a href= "tatooine.html"><img src= "images/tatooine.png" class= "planet-img"></a>
+
+        <a href= "alderaan.html"><img class= "planet-img" src= "images/alderaan.png"></a>
+
+        <a href="yavin4.html"><img src="images/yavin4.png" class= "planet-img"></a>
+      <a href="planets.html?apiNumber=2">PLANETS LINK</a>
+      </div>
+  
+    <div class= "exposition">
+      <h2>Find planet by name</h2>
+      <div class="select-box">
+        <div class="options-container active">
+          <div class="options">
+            <input type="radio" class= "radio" id="tatooine" name= "category">
+            <label for= "tatooine">Tatooine</label>
+            </div>
+            <div class="options">
+            <input type="radio" class= "radio" id="alderaan" name= "category">
+            <label for= "alderaan">Alderaan</label>
+            </div>
+            <div class= "options">
+              <input type="radio" class= "radio" id="yavin4" name= "category">
+            <label for= "yavin4">Yavin IV</label>
+            </div>
+          </div>
+        </div>
+        <div class="selected">
+          Select a planet
+        </div>
+      </div>
+   
+        
+    </div>
+
+    <form id="searchform">
+      <input id = "userInput" type = "textbox" name = "keyword">
+   </form>
+
+
+      <br>
+      <p>
+        <a class="disclaimer" href= "disclaimer.html"><h2>Site Disclaimer and Sources</h2></a>
+      </p>
+    </div>
   </div>
 </body>
 </html>

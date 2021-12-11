@@ -1,17 +1,172 @@
-body {
-  background-image: url("https://www.jpl.nasa.gov/images/the-tadpole-and-the-wriggler");
-  background-color: #696767;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  font-family: monospace;
+* {
+  box-sizing: border-box;
   margin: 0;
 }
 
-.exposition {
-  width: 60%;
-  padding: 1em;
+body {
+  background-image: url("images/godzilla_galaxy.jpg");
+  background-color: #696767;
+  background-repeat: no-repeat;
+  background-position:center
+  background-size: 100%;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.75;
+}
+
+h1 {
   text-align: center;
+  color: white;
+  margin: 15 px;
+}
+
+h2 {
+  color: white;
+  margin: 15px;
+}
+
+
+#planet-type {
+  justify-content: center;
+  clear: both;
+}
+
+#info-sidebar {
+  color:aliceblue;
+  background-color: rgb(55, 56, 110);
+  width: 30%;
+  float: right;
+  position: static;
+  top: 5em;
+  bottom: 8em;
+  border: #FAFFCD, 10px;
+  border-radius: 8px;
+  border-style: groove;
+  padding: 2.5em;
+}
+
+#info-sidebar h2 {
+  text-align: center;
+}
+
+#welcome {
+  position: relative;
+  top: 1.5em;
+}
+
+#bb8 {
+  justify-self: center;
+  height: 9em;
+}
+
+#down-arrow {
+  width: 10px;
+}
+
+.planet-img {
+  width: 150px;
+}
+.planet-img:hover {
+  opacity: 0.5;
+  margin: 0.5em;
+  width: 175px;
+}
+
+.planet-header {
+  width: 25%;
+  z-index: 1;
+  position: absolute;
+  top: 5em;
+  left: 12em;
+}
+
+.centralHQ {
+  align-content: center;
+}
+.footer {
+  background-color: rgb(13, 14, 32);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:active {
+  color: #7a859b;  
+}
+a:visited {
+  color: #a2a4aa;
+}
+a:hover {
+  color: #FAFFCD;
+  cursor: pointer;
+}
+
+.exposition {
+  width: 100%;
+  top: 200px;
+  padding: 32px;
+  margin: 15px;
   color: rgb(238, 228, 228);
-  background-color: #45394b, transparent;
+  background-color: black;
+  border-radius: 8px;
+}
+.select-box {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.select-box:hover {
+  background-color: rgb(92, 93, 165);
+}
+
+.select-box .options-container {
+ background-color: rgb(31, 29, 65);
+ max-width: 0; 
+ width: 100%;
+ /* opacity: 0; */ 
+ transition: all 0.4s;
+ border-radius: 8px;
+ overflow: hidden;
+ order: 1;
+}
+
+.selected {
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background-color: rgb(31, 29, 65);
+  
+}
+
+
+.select-box .options, .selected {
+  padding: 12px 24px;
+  cursor: pointer;
+}
+.select-box label {
+  cursor: pointer;
+}
+
+.select-box .options .radio {
+  display: none;
+}
+
+.select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+
+}
+
+.select-box.options-container::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(13, 14, 32);
+  border-radius: 0 8px 8px 0;
+}
+.select-box.options-container::-webkit-scrollbar-thumb {
+  background-color: rgb(92, 93, 165);
+  border-radius: 0 8px 8px 0;
 }
