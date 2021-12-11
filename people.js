@@ -11,7 +11,7 @@ async function fetchHomeworld(planetEndpoints) {
 }
 
  async function fetchData() {
-    fetch("http://swapi.dev/api/people/"+numberCheck)
+    fetch("https://swapi.dev/api/people/"+numberCheck)
     .then(response => {
         if(!response.ok) {
             throw Error("error")
