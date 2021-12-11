@@ -10,9 +10,8 @@ async function fetchCharacter(residentEndpoints) {
     return data;
 }
 
-
  async function fetchData() {
-    fetch("http://swapi.dev/api/planets/"+numberCheck)
+    fetch(apiPlanets+numberCheck)
     .then(response => {
         if(!response.ok) {
             throw Error("error")
@@ -33,17 +32,17 @@ async function fetchCharacter(residentEndpoints) {
             let residentsHTML = ``;
             for (let i = 0; i < characters.length; i++) {
                 const character = characters[i]
-                const split_url = character.url.split("/");
-                const id = split_url[split_url.length-2];
-                residentsHTML+= `<a href="people.html?apiNumber=${id}">${character.name}</a><br>`
+                const splitURL = character.url.split("/");
+                const id = splitURL[splitURL.length-2];
+                residentsHTML+= `<p class= "peopleNames"><a href="people.html?apiNumber=${id}">${character.name}</a><p/>`
             }
             let residentText = ``;
             //add the correct residents text to put into HTML
             if (jsonResponse.residents.length > 0) {
-                residentText = `<p class="peopleP">Residents: `;
+                residentText = `<p>Residents: </p>`;
             }
             else {
-                residentText = `<p>Residents: None`
+                residentText = `<p>Residents: None</p>`
             }
     
             //converting object
@@ -57,7 +56,7 @@ async function fetchCharacter(residentEndpoints) {
             <p>Terrain: ${jsonResponse.terrain}</p>
             <p>Surface Water: ${jsonResponse.surface_water}</p>
             <p>Population: ${jsonResponse.population}</p>
-            ${residentText}${residentsHTML}</p>
+            ${residentText}${residentsHTML}
             `
             //adding info to HTML div
             document.querySelector('#info-sidebar').insertAdjacentHTML("afterbegin", html)
